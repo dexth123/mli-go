@@ -5,18 +5,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css') ?>">
     <style>
-        body {
-            padding-top: 70px; /* Tinggi navbar */
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 999;
-            margin-bottom: 120px; /* Menambahkan margin-bottom sesuai dengan tinggi sidebar */
-        }
-
         .recommendation {
             margin-top: 150px; /* Tinggi untuk menyertakan navbar yang tetap terlihat */
         }

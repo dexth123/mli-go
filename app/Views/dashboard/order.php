@@ -16,22 +16,6 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Sidebar -->
-                <div class="col-1 text-white position-fixed h-100 fa-2xl" style="background-color: #12AD2B;">
-                    <ul class="nav flex-column">
-                        <li class="nav-item sidebar-item">
-                            <a class="nav-link text-white" href="/dashboard/profile"><i class="far fa-user"></i></a>
-                        </li>
-                        <li class="nav-item sidebar-item">
-                            <a class="nav-link text-white" href="/dashboard/order"><i class="fa-solid fa-basket-shopping"></i></a>
-                        </li>
-                        <li class="nav-item sidebar-item">
-                            <a class="nav-link text-white" href="/dashboard/product"><i class="fa-solid fa-store"></i></a>
-                        </li>
-                        <li class="nav-item sidebar-item">
-                            <a class="nav-link text-white" href="/dashboard/logout"><i class="fas fa-sign-out-alt"></i></a>
-                        </li>
-                    </ul>
-                </div>
                 <div class="container">
                     <h1>Order Form</h1>
                     <?php
