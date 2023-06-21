@@ -35,12 +35,11 @@ $routes->post('register', 'AuthController::create');
 $routes->get('login', 'AuthController::login');
 $routes->post('login', 'AuthController::authenticate');
 $routes->get('dashboard', 'Dashboard::index', ['as' => 'dashboard']);
-$routes->post('dashboard/processOrder', 'Dashboard::processOrder');
+$routes->post('dashboard/mainpage', 'Dashboard::mainpage');
 
 $routes->get('dashboard/profile', 'Dashboard::profile', ['as' => 'profile']);
 $routes->get('dashboard/product', 'Dashboard::product', ['as' => 'product']);
 $routes->get('dashboard/order', 'Dashboard::order', ['as' => 'order']);
-$routes->get('dashboard/rekomendasi', 'Dashboard::rekomendasi', ['as' => 'rekomendasi']);
 $routes->get('dashboard/logout', 'Dashboard::logout', ['as' => 'logout']);
 
 

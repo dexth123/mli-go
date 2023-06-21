@@ -13,9 +13,8 @@ class Dashboard extends Controller
         echo view('dashboard/header', $data);
         echo view('dashboard/navbar');
         echo view('dashboard/sidebar');
-        echo view('dashboard/order_form');
+        echo view('dashboard/mainpage');
         echo view('dashboard/footer');
-        echo view('dashboard/rekomendasi');
     }
 
     public function profile()
