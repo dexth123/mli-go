@@ -2,14 +2,24 @@
     .navbar {
         position: fixed;
         top: 0;
+        border: 0;
+        bottom:auto;
         width: 100%;
         z-index: 999;
-        margin-bottom: 120px; /* Menambahkan margin-bottom sesuai dengan tinggi sidebar */
+        background: linear-gradient(to right, #12ad2B, #5dd381);
+        padding: 10px 20px;
     }
+
+    .navbar .navbar-brand {
+        font-size: 20px;
+        color: #000 !important;
+        font-weight: bold;
+    }
+    
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #12AD2B;">
-    <a href="/dashboard" class="navbar-brand" href="/dashboard">Dashboard</a>
+    <a href="/dashboard" class="navbar-brand" href="/dashboard">MLI-GO</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

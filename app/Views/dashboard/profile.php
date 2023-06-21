@@ -4,12 +4,7 @@
     <title>Profile Form</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css') ?>">
-    <style>
-     .sidebar-item {
-        margin-top: 10px;
-        margin-bottom: 40px; /* Tambahkan jarak antara setiap item sidebar */
-        }      
-    </style>
+    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 </head>
 <body>
 <form class="form-container">
@@ -18,6 +13,7 @@
                 <!-- Sidebar -->
                 <div class="container">
                     <h1>Profile Form</h1>
+                    <p>Sabar bang blom buat</p>
         <!-- Form code goes here -->
     </div>
 

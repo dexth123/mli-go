@@ -7,11 +7,13 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <!-- costum css -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="<?= base_url('public/css/style.css') ?>">
 </head>
 <body>
-
-        <section class="container-fluid mb-4">
+    <h3>Sudah dibilang Login tidak bisa malah masuk regis</h3>
+    <img src="<?= base_url('assets/images/vegeta.jpg') ?>">
+    <p class="text-size 20px text-center"><a href="/dashboard">Tombol ke dashboard</a><p>
+    <section class="container-fluid mb-4">
             <!-- justify-content-center untuk mengatur posisi form agar berada di tengah-tengah -->
             <section class="row justify-content-center">
             <section class="col-12 col-sm-6 col-md-4">

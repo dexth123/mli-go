@@ -8,7 +8,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <!-- costum css -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="<?= base_url('public/css/style.css') ?>">
 </head>
 <body>
         <section class="container-fluid mb-4">
@@ -16,7 +16,8 @@
             <section class="row justify-content-center">
             <section class="col-12 col-sm-6 col-md-4">
                 <form class="form-container" action="/login" method="POST">
-                    <h4 class="text-center font-weight-bold"> Sign-In </h4>
+                    <h2 class="text-center font-weight-bold">dikarenakan login dan register masih error harap masuk<a href="/dashboard"> sini </a> ya bang</h2>
+                    <h4 class="text-center font-weight-bold"></h4>
                     <div class="form-group">
                         <label for="username">Username</label>
                         <input type="text" class="form-control" id="username" name="username" placeholder="Masukkan username">

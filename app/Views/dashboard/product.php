@@ -4,7 +4,7 @@
     <title>Produk Dijual</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
     <style>
         .product {
             display: flex;
@@ -32,11 +32,7 @@
         }
         .product-price {
             margin-bottom: 5px;
-        }
-        .sidebar-item {
-        margin-top: 10px;
-        margin-bottom: 40px; /* Tambahkan jarak antara setiap item sidebar */
-        }   
+        } 
     </style>
 </head>
 <body>

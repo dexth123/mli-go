@@ -9,7 +9,7 @@ class Dashboard extends Controller
     public function index()
     {
         helper(['form']);
-        $data['title'] = 'Order Management Dashboard';
+        $data['title'] = 'Dashboard';
         echo view('dashboard/header', $data);
         echo view('dashboard/navbar');
         echo view('dashboard/sidebar');

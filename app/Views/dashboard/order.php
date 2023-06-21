@@ -4,11 +4,9 @@
     <title>Order Form</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
     <style>
-        .sidebar-item {
-            margin-top: 10px;
-            margin-bottom: 40px; /* Tambahkan jarak antara setiap item sidebar */
-        }
+        
     </style>
 </head>
 <body>

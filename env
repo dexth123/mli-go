@@ -38,7 +38,7 @@
 # database.default.DBPrefix =
 # database.default.port = 3306
 
-# database.tests.hostname = localhost
+# database.tests.hostname = 178.128.123.205
 # database.tests.database = mligo
 # database.tests.username = mligo
 # database.tests.password = 123

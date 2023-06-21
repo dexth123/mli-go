@@ -1,35 +1,31 @@
 <style>
     .sidebar {
         position: fixed;
-        top: 65px;
-        left: 0;
+        top: 60.5px;
+        left: 60;
+
         width: 100px; /* Mengatur lebar sidebar */
         height: 100vh; /* Mengatur tinggi sidebar sesuai tinggi layar */
-        background-color: #f8f9fa;
+        background: linear-gradient(to bottom, #12AD2B, #5dd381);
         padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         z-index: 999;
     }
+
+    .sidebar-item {
+            margin-top: 10px;
+            margin-bottom: 40px; /* Tambahkan jarak antara setiap item sidebar */
+        }
 
     .content {
-        margin-left: 200px; /* Mengatur margin kiri agar konten tidak tertutupi oleh sidebar */
+        margin-left: auto; /* Mengatur margin kiri agar konten tidak tertutupi oleh sidebar */
         padding: 20px;
     }
 
-    .navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 999;
-        background-color: #12AD2B;
-        color: #fff;
-        padding: 10px 20px;
+    .far , .fa-solid , .fas {
+        color: black;
     }
 
-    .navbar .navbar-brand {
-        color: #fff;
-        font-weight: bold;
-    }
+   
 </style>
 
 <div class="sidebar">
