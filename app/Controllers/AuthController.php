@@ -2,31 +2,39 @@
 
 namespace App\Controllers;
 
-use App\Models\UserModel;
+use App\Models\LoginModel;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\RequestInterface;
 
 class AuthController extends Controller
 {
+    protected $loginModel;
+
+    public function __construct()
+    {
+        $this->loginModel = new LoginModel();
+    }
+
     public function register()
     {
         return view('auth/register');
     }
 
     public function create()
-    {
-        $userModel = new UserModel();
+{
+    $loginModel = new LoginModel();
 
-        $data = [
-            'username' => $this->request->getPost('username'),
-            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT)
-        ];
+    $data = [
+        'Username' => $this->request->getPost('Username'),
+        'Password' => $this->request->getPost('Password')
+    ];
 
-        $userModel->insert($data);
+    $loginModel->insert($data);
 
-        return redirect()->to('/login');
-    }
+    return redirect()->to('/login');
+}
 
+    
     public function login()
     {
         return view('auth/login');
@@ -34,14 +42,12 @@ class AuthController extends Controller
 
     public function authenticate()
     {
-        $userModel = new UserModel();
-
-        $username = $this->request->getPost('username');
-        $password = $this->request->getPost('password');
-
-        $user = $userModel->where('username', $username)->first();
-
-        if ($user && password_verify($password, $user['password'])) {
+        $loginModel = new LoginModel();
+        $username = $this->request->getPost('Username');
+        $password = $this->request->getPost('Password');
+        $user = $loginModel->where('Username', $username)->first();
+    
+        if ($user && $password === $user['Password']) {
             // Login success
             return redirect()->to('/dashboard');
         } else {
@@ -49,4 +55,6 @@ class AuthController extends Controller
             return redirect()->back()->with('error', 'Invalid username or password');
         }
     }
+    
+
 }

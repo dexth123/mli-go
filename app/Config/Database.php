@@ -29,7 +29,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'login',
+        'database' => 'mlijo',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -43,6 +43,7 @@ class Database extends Config
         'failover' => [],
         'port'     => 3306,
     ];
+    
 
     /**
      * This database connection is used when

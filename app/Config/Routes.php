@@ -32,12 +32,17 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('register', 'AuthController::register');
 $routes->post('register', 'AuthController::create');
+$routes->post('register/create', 'AuthController::create');
 $routes->get('login', 'AuthController::login');
 $routes->post('login', 'AuthController::authenticate');
+$routes->post('/login/authenticate', 'AuthController::authenticate');
 $routes->get('dashboard', 'Dashboard::index', ['as' => 'dashboard']);
 $routes->post('dashboard/mainpage', 'Dashboard::mainpage');
 
 $routes->get('dashboard/profile', 'Dashboard::profile', ['as' => 'profile']);
+$routes->get('/profile', 'ProfileController::index');
+$routes->post('/profile/save', 'ProfileController::save');
+$routes->post('/profile/update', 'ProfileController::update');
 $routes->get('dashboard/product', 'Dashboard::product', ['as' => 'product']);
 $routes->get('dashboard/order', 'Dashboard::order', ['as' => 'order']);
 $routes->get('dashboard/logout', 'Dashboard::logout', ['as' => 'logout']);

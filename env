@@ -31,17 +31,17 @@
 #--------------------------------------------------------------------
 
 # database.default.hostname = localhost
-# database.default.database = login
+# database.default.database = mlijo
 # database.default.username = root
 # database.default.password = 
 # database.default.DBDriver = MySQLi
 # database.default.DBPrefix =
 # database.default.port = 3306
 
-# database.tests.hostname = 178.128.123.205
-# database.tests.database = mligo
-# database.tests.username = mligo
-# database.tests.password = 123
+# database.tests.hostname = 
+# database.tests.database = 
+# database.tests.username = 
+# database.tests.password = 
 # database.tests.DBDriver = MySQLi
 # database.tests.DBPrefix =
 # database.tests.port = 3306
